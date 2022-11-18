@@ -1,3 +1,101 @@
 html{
     font-family: 'Roboto Mono', monospace;
 }
+
+body{
+    margin: 0;
+}
+
+.container{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(121, 118, 118);
+}
+
+.wrapper{
+    width: 350px;
+    height: 650px;
+    background-color: rgb(207, 207, 207);
+    border-radius: 15px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 50);
+    display: flex;
+    flex-direction: column;
+    /*position: absolute;*/
+}
+
+.title{
+    cursor: default;
+    font-weight: bolder;
+    font-size: 56px;
+    margin: 0;
+    margin-bottom: -24px;
+    color: rgb(41, 41, 41);
+}
+
+.screen{
+    height: 30%; 
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-color: rgba(134, 134, 134, 0.2);
+    border-bottom: solid rgba(133, 133, 133, 0.2);
+    box-shadow: inset 0 3px 10px rgb(0 0 0 / .2);
+}
+
+.buttons{
+    display: flex;
+    flex-direction: column;
+    height: 70%;
+    width: 90%;
+    padding: 16px;
+    justify-content: space-between;
+}
+
+.column{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+    justify-content: space-between;
+}
+
+.column button{
+    width: 75px;
+    height: 75px;
+    font-family: 'Roboto Mono', monospace;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.055);
+    border-width: 0px;
+    border-color: rgb(112, 112, 112);
+    font-weight: bolder;
+    font-size: 24px;
+    cursor: pointer;
+    box-shadow: inset 0 3px 10px rgb(0 0 0 / .2);
+}
+
+.column button:hover{
+    background-color: rgba(24, 24, 24, 0.1);
+}
+
+.footer{
+    font-weight: lighter;
+    font-size: 14px;
+    text-decoration: none;
+    color: rgb(41, 41, 41);
+    cursor: default;
+}
+
+.footer a{
+    font-weight: bold;
+    font-size: 14px;
+    text-decoration: none;
+    color: rgb(41, 41, 41);
+    transition: 1 ease-in-out;
+}
+
+.footer a:hover{
+    font-weight: bolder;
+}
