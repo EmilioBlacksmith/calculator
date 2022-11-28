@@ -1,4 +1,53 @@
-console.log("Hello World!");
+// Variables
+
+let currentNum = '0';
+let lastNum = '0';
+let operator = '';
+let canAddDot = true;
+
+const currentValue = document.querySelector('.current');
+const operation = document.querySelector('.operation');
+
+currentValue.innerText = currentNum;
+
+// Keyboard Handling
+document.addEventListener('keydown', (event) => {
+    if(event.key >= 0 && event.key <= 9){
+        addNumberCurrent(event.key);
+    }
+    if(event.key == '-') console.log("minus");
+    if(event.key == '/') console.log("divide");
+    if(event.key == '+') console.log("plus");
+    if(event.key == '*' || event.key == 'x') console.log("multiply");
+    if(event.key == '=') console.log("equals");
+    if(event.key == 'Backspace') console.log('erase');
+    if(event.key == 'Enter') console.log('equals');
+    if(event.key == '%') console.log('module operation');
+    if(event.key == '^') console.log('Pow');
+    if(event.key == '.') appendPoint();
+});
+
+// Screen Operations
+
+function addNumberCurrent(newNum){
+    let newNumber = parseInt(newNum);
+
+    if(currentNum == '0'){
+        currentNum = '';
+    }
+
+    if(newNum == '.' && canAddDot == true){
+        currentNum += '.'
+        canAddDot = false;
+    }
+    
+    if(newNumber => 0 || newNumber <= 9){
+        currentNum += newNum;
+    }
+    currentValue.innerText = currentNum;
+}
+
+// Append Operations
 
 
 
