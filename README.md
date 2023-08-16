@@ -1,4 +1,6 @@
-# Rock Paper Scissors
+<a href="https://emilioblacksmith.github.io/calculator/"><img src="https://img.shields.io/website-up-down-green-red/http/emilioblacksmith.github.io/calculator/" /></a>
+
+# Calculator
 This is a Vanilla Javascript project of a CALCULATOR in a website, with the intended purpose of following a workflow of development from pre-production, production and styling.
 
 ## Project's Goal.
