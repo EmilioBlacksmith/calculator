@@ -3,6 +3,8 @@
 # Calculator
 This is a Vanilla Javascript project of a CALCULATOR in a website, with the intended purpose of following a workflow of development from pre-production, production and styling.
 
+![preview](https://github.com/EmilioBlacksmith/calculator/assets/71019624/7aca9627-3c8f-4a24-8770-c795ba446125)
+
 ## Project's Goal.
 The Goal of this project is:
 - Design and Create a Web Calculator with HTML5/CSS3/Javascript with user functionality.
